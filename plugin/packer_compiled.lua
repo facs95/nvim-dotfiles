@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-prisma"] = {
+    loaded = true,
+    path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    url = "https://github.com/pantharshit00/vim-prisma"
   },
   ["vim-surround"] = {
     loaded = true,

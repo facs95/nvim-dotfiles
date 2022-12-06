@@ -27,16 +27,22 @@ return require('packer').startup(function(use)
   -- Telescope and fzf
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   use("ThePrimeagen/harpoon")
 
   -- Easy editing
   use("tpope/vim-surround")
+
+  -- Formatter
+  use('sbdchd/neoformat')
+
+  -- Prisma syntax highlight
+  use('pantharshit00/vim-prisma')
 end)
