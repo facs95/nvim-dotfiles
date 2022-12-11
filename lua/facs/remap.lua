@@ -39,6 +39,7 @@ M.nnoremap("<silent> <leader>-", ":resize -5<CR>")
 
 -- Harpoon
 M.nnoremap("<leader>aa", ':lua require("harpoon.mark").add_file()<CR>')
+M.nnoremap("<leader>al", ':lua require("harpoon.mark").toggle_quick_menu()<CR>')
 M.nnoremap("<leader>ap", ':lua require("harpoon.ui").nav_prev()<CR>')
 M.nnoremap("<leader>an", ':lua require("harpoon.ui").nav_next()<CR>')
 M.nnoremap("<leader>a1", ':lua require("harpoon.ui").nav_file(1)<CR>')
