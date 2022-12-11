@@ -87,7 +87,7 @@ local function config(_config)
       nnoremap("<leader>rn", function() vim.lsp.buf.rename() end)
       nnoremap("gi", function() vim.lsp.buf.implementation() end)
       inoremap("<C-h>", function() vim.lsp.buf.signature_help() end)
-      nnoremap("<leader>f", function() vim.lsp.buf.format() end)
+      nnoremap("<leader>F", function() vim.lsp.buf.format() end)
 
       -- -- format on save
       -- if client.server_capabilities.documentFormattingProvider then

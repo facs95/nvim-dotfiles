@@ -61,6 +61,8 @@ M.inoremap('{', '{}<left>')
 M.inoremap('{<CR>', '{<CR>}<ESC>O')
 M.inoremap('{;<CR>', '{<CR>};<ESC>O')
 
+-- Formatter with Neoformat
+M.nnoremap("<leader>f", ":Neoformat")
 
 -- Search and replace tips
 -- Search for text using / or for a word using *.
