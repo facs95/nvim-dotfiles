@@ -17,9 +17,14 @@ vim.opt.scrolloff = 10
 
 vim.g.mapleader = " "
 
+-- Show git commit when on a certain line
 vim.g.blamer_enabled = true
+vim.g.blamer_show_in_visual_modes = false
 
 vim.opt.signcolumn = "yes"
+
+-- Neoformat to get to use prettier
+vim.g.neoformat_try_node_exe = 1
 
 
 

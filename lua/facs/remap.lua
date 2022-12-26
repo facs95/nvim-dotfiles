@@ -12,6 +12,9 @@ M.inoremap("kj", "<Esc>")
 -- Go back to previous file
 M.nnoremap("<leader>b", "<c-^>")
 
+-- Delete all buffers but this one
+M.nnoremap("<leader>cb", ":%bd|e#")
+
 -- Change current directory for Telescope to work properly
 M.nnoremap("<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
 
