@@ -45,4 +45,7 @@ return require('packer').startup(function(use)
 
   -- Prisma syntax highlight
   use('pantharshit00/vim-prisma')
+
+  -- Copilot
+  use('github/copilot.vim')
 end)

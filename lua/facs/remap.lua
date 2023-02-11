@@ -1,7 +1,7 @@
 local M = require("facs.keymap")
 
 -- This is for going back to the directory
-M.nnoremap("<leader>pv", "<cmd>Ex<CR>")
+M.nnoremap("<leader>pv", vim.cmd.Ex)
 -- Move lines
 M.vnoremap("J", ":m '>+1<CR>gv=gv")
 M.vnoremap("K", ":m '<-2<CR>gv=gv")
@@ -13,7 +13,7 @@ M.inoremap("kj", "<Esc>")
 M.nnoremap("<leader>b", "<c-^>")
 
 -- Delete all buffers but this one
-M.nnoremap("<leader>cb", ":%bd|e#")
+M.nnoremap("<leader>cb", ":%bd|e#<CR>")
 
 -- Change current directory for Telescope to work properly
 M.nnoremap("<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
@@ -28,7 +28,7 @@ M.vnoremap("<leader>y", '"+y')
 M.xnoremap("p", "pgvy")
 
 -- Autocomplete on tab
-M.inoremap("<Tab>", "<c-x><c-o>")
+--M.inoremap("<Tab>", "<c-x><c-o>")
 
 -- Jump within panes
 M.nnoremap("<leader>h", ":wincmd h<CR>")
@@ -67,6 +67,14 @@ M.inoremap('{;<CR>', '{<CR>};<ESC>O')
 
 -- Formatter with Neoformat
 M.nnoremap("<leader>f", ":Neoformat<CR>")
+
+-- Jump 10 lines
+M.nnoremap("<C-k>", "10k")
+M.nnoremap("<C-j>", "10j")
+
+-- Indent a line multiple times in v mode
+--M.vnoremap(">", ">gv")
+--M.vnoremap("<", "<gv")
 
 -- Search and replace tips
 -- Search for text using / or for a word using *.
