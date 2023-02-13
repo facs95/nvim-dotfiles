@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
   -- Copilot
   use('github/copilot.vim')
 
+  use('tpope/vim-surround')
+
 end)
