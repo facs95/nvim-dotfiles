@@ -77,6 +77,9 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>Y", "\"+Y")
 vim.keymap.set("v", "<leader>d", "\"_d")
 
+-- Search and replace highlighted text
+vim.keymap.set("v", "<leader>R", [["hy:%s/<C-r>h//gc<left><left><left>]])
+
 -- **X MODE***
 -- Paste several times (can use P for normal behaviour)
 vim.keymap.set("x", "p", "pgvy")
