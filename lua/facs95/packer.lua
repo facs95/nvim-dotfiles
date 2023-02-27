@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use("ThePrimeagen/harpoon")
   use("tpope/vim-fugitive")
+  use("f-person/git-blame.nvim")
 
   use {
     'VonHeikemen/lsp-zero.nvim',
