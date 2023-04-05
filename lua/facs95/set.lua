@@ -15,7 +15,7 @@ vim.opt.updatetime = 50
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -27,4 +27,4 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
 vim.opt.list = true
-vim.opt.listchars = { tab = "▸ ", trail = "▫" }
+vim.opt.listchars = { tab = "▸ " }

@@ -12,6 +12,12 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
+  -- support to link to github directly
+  use {
+    'ruifm/gitlinker.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+  }
+
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
@@ -57,5 +63,4 @@ return require('packer').startup(function(use)
   use('github/copilot.vim')
 
   use('tpope/vim-surround')
-
 end)

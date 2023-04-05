@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
   },
+  ["gitlinker.nvim"] = {
+    loaded = true,
+    path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/gitlinker.nvim",
+    url = "https://github.com/ruifm/gitlinker.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/freddycaceres/.local/share/nvim/site/pack/packer/start/harpoon",
