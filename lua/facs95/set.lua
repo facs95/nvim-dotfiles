@@ -28,3 +28,6 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.list = true
 vim.opt.listchars = { tab = "▸ " }
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true

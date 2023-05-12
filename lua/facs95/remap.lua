@@ -79,14 +79,17 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 -- Search and replace highlighted text
 vim.keymap.set("v", "<leader>R", [["hy:%s/<C-r>h//gc<left><left><left>]])
+-- Search and replace accross repo on quicklist
+-- Telescope grep then CTRL + q
+-- :cdo s/old/new/gc
 
 -- **X MODE***
 -- Paste several times (can use P for normal behaviour)
 vim.keymap.set("x", "p", "pgvy")
 
-
-
-
-
-
-
+-- Tab management
+-- NOTE: to switch between tabs use gt command
+-- eg: 1gt to switch to the first tab
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tm", ":tabedit %<CR>")
