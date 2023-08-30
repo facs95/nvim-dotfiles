@@ -9,7 +9,13 @@ return require('packer').startup(function(use)
     -- Telescope and fzf
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+    requires = {
+      { 'nvim-lua/plenary.nvim' },
+      { "nvim-telescope/telescope-live-grep-args.nvim" }
+    },
+    config = function()
+      require("telescope").load_extension("live_grep_args")
+    end
   }
 
   -- support to link to github directly
@@ -64,4 +70,11 @@ return require('packer').startup(function(use)
 
   use('tpope/vim-surround')
 
+  -- In v mode - gc line comment - gb block comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 end)
