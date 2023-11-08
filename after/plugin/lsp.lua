@@ -18,6 +18,7 @@ lsp.ensure_installed({
   'gopls',
   'pyright',
   'tailwindcss',
+  'emmet_ls',
 })
 
 -- Fix Undefined global 'vim'
@@ -72,4 +73,15 @@ lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true
+})
+
+local lspconfig = require('lspconfig')
+lspconfig.emmet_ls.setup({
+  capabilities = snip_caps,
+  filetypes = {
+    "css",
+    "html",
+    "javascriptreact",
+    "typescriptreact",
+  },
 })

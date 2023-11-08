@@ -33,9 +33,12 @@ return require('packer').startup(function(use)
     end
   })
 
+  -- data structure for color schem within code
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('mbbill/undotree')
+
   use("ThePrimeagen/harpoon")
+
   use("tpope/vim-fugitive")
   use("f-person/git-blame.nvim")
 
