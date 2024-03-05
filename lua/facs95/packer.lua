@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
     -- Telescope and fzf
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     requires = {
       { 'nvim-lua/plenary.nvim' },
       { "nvim-telescope/telescope-live-grep-args.nvim" }
